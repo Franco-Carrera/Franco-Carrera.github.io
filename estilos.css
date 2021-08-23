@@ -343,7 +343,7 @@ img {
 /************ Modal************* */
 .modal {
   position: fixed;
-  z-index: 999;
+  z-index: 1099;
   top: 0;
   right: 0;
   bottom: 0;
@@ -523,7 +523,7 @@ progress::-moz-progress-bar {
   position: fixed;
   left: 0;
   bottom: 0;
-  padding: 1rem 2rem 1rem 2rem;
+  padding: 1rem 0rem 0rem 0rem;
   z-index: 999;
   width: 100%;
   height: var(--header-height);
