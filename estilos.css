@@ -508,7 +508,7 @@ progress::-moz-progress-bar {
 }
 
 .contact-card > small {
-  margin-top: 1rem;
+  margin-top: -1rem;
 }
 
 .footer {
