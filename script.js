@@ -1,4 +1,5 @@
 /* ********* Menu ******** */
+const checkpoint = 700;
 
 ((d) => {
   const $btnMenu = d.querySelector(".menu-btn"),
@@ -22,8 +23,17 @@
 
 // ver funciones anónimas js curso/ && //res = respuesta
 
-/*******Contact Form******* */
+window.addEventListener("scroll", () => {
+  const currentScroll = window.pageYOffset;
+  if (currentScroll <= checkpoint) {
+    opacity = 1 - currentScroll / checkpoint;
+  } else {
+    opacity = 0;
+  }
+  document.querySelector(".front").style.opacity = opacity;
+});
 
+/*******Contact Form******* */
 ((d) => {
   const $form = d.querySelector(".contact-form"),
     $loader = d.querySelector(".contact-form-loader"),

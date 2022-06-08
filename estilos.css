@@ -257,8 +257,16 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* background-attachment: var(--hero-attachment); */
+  background-attachment: var(--hero-attachment);
+
+  background-color: #ededed;
+  transition: opacity 0.1s;
 }
+
+/* .front {
+  background-color: #ededed;
+  transition: opacity 0.1s;
+} */
 
 .hero-image-opacity {
   width: 100%;
@@ -340,7 +348,7 @@ img {
   }
 }
 
-/************ Modal************* */
+/* ********** Modal ********** */
 .modal {
   position: fixed;
   z-index: 999;
@@ -356,6 +364,7 @@ img {
   pointer-events: none;
   transition: all 1s;
 }
+
 .modal-content {
   position: relative;
 }
@@ -365,6 +374,7 @@ img {
   top: 1rem;
   right: 1rem;
 }
+
 .modal-close svg {
   width: 3rem;
   height: 3rem;
@@ -570,6 +580,7 @@ progress::-moz-progress-bar {
   pointer-events: none;
   transition: all 0.5s ease-in-out;
 }
+
 .portfolio-card:hover .portfolio-card-info {
   opacity: 1;
   pointer-events: auto;
@@ -602,6 +613,7 @@ progress::-moz-progress-bar {
   grid-template-columns: 40% 60%;
   grid-auto-rows: 2rem;
 }
+
 .portfolio-details b {
   color: var(--first-color);
 }
