@@ -445,9 +445,10 @@ progress::-moz-progress-bar {
   margin-right: auto;
   max-width: var(--max-width);
 }
-.gray-scale {
-  filter: grayscale(1);
-}
+
+/* .gray-scale {
+  filter: grayscale(0.5);
+} */
 
 .none {
   display: none;
@@ -518,7 +519,7 @@ progress::-moz-progress-bar {
 }
 
 .contact-card > small {
-  margin-top: -1rem;
+  margin-top: -0.5rem;
 }
 
 .footer {
